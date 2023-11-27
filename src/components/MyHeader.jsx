@@ -3,15 +3,19 @@ import { View } from "react-native";
 
 const styles = StyleSheet.create({
     header: {
-        height: 80,
-        padding: 38,
-        backgroundColor: "coral",
+        padding: 25,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        backgroundColor: "#6495ED",
+
     },
     text: {
-        color: "black",
-        fontSize: 23,
+        fontSize: 25,
         textAlign: "center",
+        fontWeight: "bold",
+        color: "white",
     },
+
 });
 export default function MyHeader({title}) {
     return (

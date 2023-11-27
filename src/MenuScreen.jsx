@@ -6,8 +6,8 @@ export default function MenuScreen({navigation}) {
     return (
         <View>
             <Text>Menu</Text>
-            <Button title={"INÍCIO"} onnPress={() => navigation.navigate("HomeScreen")}/>
-            <Button title={"DISPOSITIVO"} onPress={() => navigation.navigate("DispositivoScreen")}/>
+            <Button title={"INÍCIO"} onPress={() => navigation.navigate("HomeScreen")}/>
+            <Button title={"BUSSOLA"} onPress={() => navigation.navigate("BussolaScreen")}/>
         </View>
     );
 }
