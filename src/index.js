@@ -24,10 +24,6 @@ export default function RootNavigation({navigation}) {
                     name="DispositivoScreen"
                     component={DispositivoScreen}
                     options={{ headerShown: false }} />
-                <Stack.Screen
-                    name="MyHeader"
-                    component={MyHeader}
-                    options={{ headerShown: false }} />
             </Stack.Navigator>
         </NavigationContainer>
     );

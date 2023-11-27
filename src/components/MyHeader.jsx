@@ -8,12 +8,12 @@ const styles = StyleSheet.create({
         backgroundColor: "coral",
     },
     text: {
-        color: "#fff",
+        color: "black",
         fontSize: 23,
         textAlign: "center",
     },
 });
-export default function MyHeader({navigation}) {
+export default function MyHeader({title}) {
     return (
         <View style={styles.header}>
             <Text style={styles.text}>
