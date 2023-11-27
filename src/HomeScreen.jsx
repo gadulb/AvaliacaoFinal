@@ -1,8 +1,18 @@
-import { Button, Text, View } from "react-native";
+import { Button, StyleSheet, Text, View } from "react-native";
+
+const styles = StyleSheet.create({
+    container: {
+        padding: 25,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        backgroundColor: "#6495ED",
+        flex: 1,
+    },
+});
 
 export default function HomeScreen({navigation}) {
     return (
-        <View>
+        <View style={styles.container}>
             <Text>Seja Bem-Vindo!</Text>
             <Text>Equipe:</Text>
             <Text>Adriano Ramos</Text>
