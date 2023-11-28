@@ -1,49 +1,66 @@
 import React from "react";
-import { Button, Text, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet, Image } from "react-native";
+import { Button } from "react-native-paper";
+import MyHeader from "./components/MyHeader";
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "#F45AAF",
   },
-
-  boldText: {
-    fontSize: 20,
+  headerText: {
+    fontSize: 24,
     fontWeight: "bold",
-    marginBottom: 10,
+    marginBottom: 16,
+    marginTop: 25,
   },
-
-  botao: {
-    backgroundColor: "#B0E0E6",
-    width: 300,
-    height: 50,
-    border: 0,
-    padding: 0,
-    marginBottom: 20,
-    boxShadow: 0,
-    borderRadius: 10,
-    alignItems: "center",
-    justifyContent: "center",
+  button: {
+    backgroundColor: "#00D3F5",
+    width: 120,
+    marginTop: 16,
+  },
+  buttonText: {
     color: "white",
-    alignContent: "center",
+    fontSize: 16,
+  },
+  gifContainer: {
+    borderColor: "#00D3F5",
+    borderWidth: 5,
+    borderRadius: 5,
+    marginTop: 16,
+  },
+  gifImage: {
+    width: 200,
+    height: 200,
   },
 });
 
 export default function MenuScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.boldText}>Menu</Text>
+      <MyHeader title={"Menu"} />
+      <Text style={styles.headerText}>sekai de ichiban OHIME-SAMA</Text>
+      <View style={styles.gifContainer}>
+        <Image
+          source={require("../assets/img/miku-the-world-is-mine.gif")}
+          style={styles.gifImage}
+        />
+      </View>
       <Button
-        style={styles.botao}
-        title="INÍCIO"
+        style={styles.button}
+        labelStyle={styles.buttonText}
         onPress={() => navigation.navigate("HomeScreen")}
-      />
+      >
+        INÍCIO
+      </Button>
       <Button
-        style={styles.botao}
-        title="BUSSOLA"
+        style={styles.button}
+        labelStyle={styles.buttonText}
         onPress={() => navigation.navigate("BussolaScreen")}
-      />
+      >
+        BUSSOLA
+      </Button>
     </View>
   );
 }

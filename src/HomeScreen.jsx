@@ -15,6 +15,8 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 16,
+    marginTop: 25,
+    
   },
   normalText: {
     fontSize: 18,
@@ -28,6 +30,7 @@ const styles = StyleSheet.create({
   buttonText: {
     color: "white",
     fontSize: 16,
+    
   },
   gifContainer: {
     borderColor: "#00D3F5",
@@ -52,7 +55,7 @@ export default function HomeScreen({ navigation }) {
           style={styles.gifImage}
         />
       </View>
-      <Text style={styles.normalText}>Equipe:</Text>
+      <Text style={styles.headerText}>Equipe:</Text>
       <Text style={styles.normalText}>Adriano Ramos</Text>
       <Text style={styles.normalText}>Nina Carolina Lima Barater</Text>
       <Button

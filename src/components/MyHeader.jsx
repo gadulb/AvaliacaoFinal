@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
         backgroundColor: "#00D3F5",
-        marginBottom: 25,
+
 
     },
     text: {
