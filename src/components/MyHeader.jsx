@@ -3,13 +3,16 @@ import { View } from "react-native";
 
 const styles = StyleSheet.create({
     header: {
+        alignSelf: 'stretch',
         padding: 25,
         fontWeight: 'bold',
         textAlign: 'center',
-        backgroundColor: "#6495ED",
+        backgroundColor: "#00D3F5",
+        marginBottom: 25,
 
     },
     text: {
+        marginTop: 20,
         fontSize: 25,
         textAlign: "center",
         fontWeight: "bold",

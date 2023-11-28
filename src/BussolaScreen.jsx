@@ -8,6 +8,7 @@ import * as Location from 'expo-location';
 import MapView, { Marker } from 'react-native-maps'; // Import MapView and Marker
 import { ScrollView } from 'react-native';
 
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -21,8 +22,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
       },
       map: {
-        width: 480,
-        height: 480,
+        width: 459,
+        height: 459,
       },
       boldText: {
         fontSize: 20,
